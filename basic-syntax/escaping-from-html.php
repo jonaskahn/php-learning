@@ -4,7 +4,6 @@
 <?php echo 'While this is going to be parsed.'; ?>
 <p>This will also be ignored by PHP and displayed by the browser.</p>
 
-/*-------------------------------------------------------------------*/
 <!-- Examples of entering and exiting the PHP parser -->
 <?php
     echo 'This is a test';
@@ -14,9 +13,6 @@
 
 <?php echo 'We omitted the last closing tag';
 
-
-?>
-/*-------------------------------------------------------------------*/
 
 <!-- 3. Advanced escaping using conditions -->
 

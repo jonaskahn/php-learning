@@ -8,7 +8,7 @@
     echo 'One Final Test'; # This is a one-line shell-style comment
 ?>
 
-<h1>Another style</h1>
+<!-- Another style -->
 
 <?php
 

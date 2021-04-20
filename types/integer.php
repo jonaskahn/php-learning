@@ -33,3 +33,10 @@ $large_number =  50000000000000 * $million;
 var_dump($large_number);                     // float(5.0E+19)
 ?>
 
+<!--Example #4 division operator  -->
+<?php
+var_dump(25/7);         // float(3.5714285714286)
+var_dump((int) (25/7)); // int(3)
+var_dump(round(25/7));  // float(4)
+?>
+

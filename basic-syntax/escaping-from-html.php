@@ -17,6 +17,7 @@
 
 ?>
 /*-------------------------------------------------------------------*/
+
 //Advanced escaping using conditions
 <?php if ($expression == true): ?>
   This will show if the expression is true.

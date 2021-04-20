@@ -14,6 +14,9 @@
 <?php echo 'We omitted the last closing tag';
 
 
+
+
+?>
 <!-- 3. Advanced escaping using conditions -->
 
 <?php if ($expression == true): ?>

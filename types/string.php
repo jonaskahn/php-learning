@@ -20,3 +20,10 @@ echo 'This will not expand: \n a newline';
 // Outputs: Variables do not $expand $either
 echo 'Variables do not $expand $either';
 ?>
+
+<?php
+$num = 12345;
+echo 'number: $num';
+//Output 'number: $num' not 'number: 12345'
+
+

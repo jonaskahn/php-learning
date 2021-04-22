@@ -198,3 +198,12 @@ Array
     [1] => 7
 )
 -->
+
+<!-- Array do's and don'ts -->
+
+<!-- Why is $foo[bar] wrong? -->
+<?php
+$foo[bar] = 'enemy';
+echo $foo[bar];
+// etc
+?>

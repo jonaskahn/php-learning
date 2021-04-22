@@ -206,4 +206,5 @@ Array
 $foo[bar] = 'enemy';
 echo $foo[bar];
 // etc
+//wrong but work by auto casting --> still strongly don't recommend
 ?>

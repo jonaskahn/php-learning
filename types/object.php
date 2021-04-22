@@ -28,3 +28,32 @@ echo $obj->scalar;  // outputs 'ciao'
 
 <!-- create an empty generic php object that you can then modify for whatever purpose you choose -->
 <?php $genericObject = new stdClass(); ?>
+
+
+<!-- More examples 
+In PHP 7 there are a few ways to create an empty object
+-->
+
+<?php
+$obj1 = new \stdClass; // Instantiate stdClass object
+$obj2 = new class{}; // Instantiate anonymous class
+$obj3 = (object)[]; // Cast empty array to object
+
+var_dump($obj1); // object(stdClass)#1 (0) {}
+var_dump($obj2); // object(class@anonymous)#2 (0) {}
+var_dump($obj3); // object(stdClass)#3 (0) {}
+?>
+
+<!-- $obj1 and $obj3 are the same type, but $obj1 !== $obj3. Also, all three will json_encode() to a simple JS object {}: -->
+
+<?php
+echo json_encode([
+    new \stdClass,
+    new class{},
+    (object)[],
+]);
+?>
+
+<!-- RESULT
+Outputs: [{},{},{}]
+-->

@@ -153,3 +153,48 @@ unset($arr[5]); // This removes the element from the array
 
 unset($arr);    // This deletes the whole array
 ?>
+
+
+<?php
+// Create a simple array.
+$array = array(1, 2, 3, 4, 5);
+print_r($array);
+
+// Now delete every item, but leave the array itself intact:
+foreach ($array as $i => $value) {
+    unset($array[$i]);
+}
+print_r($array);
+
+// Append an item (note that the new key is 5, instead of 0).
+$array[] = 6;
+print_r($array);
+
+// Re-index:
+$array = array_values($array);
+$array[] = 7;
+print_r($array);
+?>
+
+<!-- RESULT 
+Array
+(
+    [0] => 1
+    [1] => 2
+    [2] => 3
+    [3] => 4
+    [4] => 5
+)
+Array
+(
+)
+Array
+(
+    [5] => 6
+)
+Array
+(
+    [0] => 6
+    [1] => 7
+)
+-->

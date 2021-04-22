@@ -50,3 +50,26 @@ Now, I am printing some {$foo->bar[1]}.
 This should print a capital 'A': \x41
 EOT;
 ?>
+
+<!-- Using Heredoc to initialize static values -->
+<?php
+// Static variables
+function foo()
+{
+    static $bar = <<<LABEL
+Nothing in here...
+LABEL;
+}
+
+// Class properties/constants
+class foo
+{
+    const BAR = <<<FOOBAR
+Constant example
+FOOBAR;
+
+    public $baz = <<<FOOBAR
+Property example
+FOOBAR;
+}
+?>
